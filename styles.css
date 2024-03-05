@@ -35,5 +35,7 @@ footer {
     text-align: justify;
 }
 
-
+fieldset {
+    max-width:fit-content;
+}
 
