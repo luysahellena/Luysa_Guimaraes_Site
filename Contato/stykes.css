@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(201, 188, 188);
+}
+
+.lista {
+    display: flex;
+    gap: 4rem;
+}

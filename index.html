@@ -14,11 +14,11 @@
     </header>
     <nav class="nav-bar">
        <ul class="nav-items">
-            <li><a href="">Início</a></li>
-            <li><a href="">Quem somos nós?</a></li>
-            <li><a href="">Areas de Atuação</a></li>
-            <li><a href="">Colaboradores</a></li>            
-            <li><a href="">Contato</a></li>            
+            <li><a href="index.html">Início</a></li>
+            <li><a href="História/historia.html">Quem somos nós?</a></li>
+            <li><a href="Areas/areas.html">Areas de Atuação</a></li>
+            <li><a href="Colaboradores/colaboradores.html">Colaboradores</a></li>            
+            <li><a href="Contato/contato.html">Contato</a></li>            
        </ul>
     </nav>
     <section>
@@ -88,12 +88,50 @@
     </table>
 <br><br><br>
     <fieldset>
-        <form action="">
-            <label for="name">Digite seu nome aqui</label><br>
+        <legend>DUVIDAS E RECLAMAÇÕES</legend>
+        <form action="" method="">
+            <label for="name" class="label">Digite seu nome aqui</label><br>
             <input type="text" name="name" id="name" placeholder="Fulano Beltrano da Silva"> <br>
-            <label for="email">Digite seu e-mail aqui</label><br>
+            <label for="email" class="label">Digite seu e-mail aqui</label><br>
             <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com">        
+            <br><br>
+
+            <label for="estado">Selecione o seu Estado</label><br>
+
+            <select name="estado" id="estado">
+                <option value="estado">Selecione</option>
+                <option value="estado">AC</option>
+                <option value="estado">AL</option>
+                <option value="estado">AM</option>
+                <option value="estado">SP</option>
+                <option value="estado">MG</option>
+                <option value="estado">RJ</option>
+                <option value="estado">BA</option>
+                <option value="estado">RS</option>
+                <option value="estado">RR</option>
+                <option value="estado">RO</option>
+                <option value="estado">ES</option>
+                <option value="estado">SC</option>
+                <option value="estado">MT</option>
+                <option value="estado">MS</option>
+            </select><br><br>
+            <span class="span_sexo">Sexo</span><br>
+            <label for="sexo" class="">Feminino</label>
+            <input type="radio" name="sexo" value="feminino">            
+            <label for="sexo class="">Masculino</label>
+            <input type="radio" name="sexo" value="masculino"><br><br>
+            <textarea name="text" id="" cols="30" rows="10" placeholder="Deixe sua sugestão aqui"></textarea><br><br>
+        
+        <input type="checkbox">
+            <span>Declaro que li e concordo com os <a href="">Termos e Condições</a> da pagina!
+            </span>
+         
+        <br><br>
         </form>
+        <button type="submit">        
+            Enviar
+        </button>
+        <button type="reset">Limpar</button>
     </fieldset>
     <br><br><br>
     <footer>

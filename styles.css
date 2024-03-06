@@ -37,5 +37,14 @@ footer {
 
 fieldset {
     max-width:fit-content;
+    
 }
 
+.span_sexo {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
