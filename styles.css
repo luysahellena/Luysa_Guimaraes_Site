@@ -1,50 +1,85 @@
 body {
-    background-color: rgb(201, 188, 188);
+  background-color: #375e5e;
+}
+
+.header {
+  background-color: #398988;
 }
 
 h1 {
-    text-align: center;
-    color: rgb(2, 79, 2);
+  text-align: center;
+  color: #073332;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .nav-bar {
-    display:flex
+  display: flex;
 }
 
 .nav-items {
-    display: flex;
-    gap: 2rem;
-    margin-right: 2rem;
-    list-style: none;
-    line-break: loose;
+  display: flex;
+  gap: 2rem;
+  margin-right: 2rem;
+  list-style: none;
+}
 
+.link {
+  text-decoration: none;
+  color: #073332;
+  font-weight: bold;
+}
+
+.sidebar {
+  background-color: #398988;
+  width: 12.5rem;
+  height: 58.8rem;
+  position: absolute;
+}
+
+.img_sidebar {
+  width: 10rem;
+  height: auto;
+  margin-left: 1rem;
+}
+
+.menu_sidebar {
+  list-style: none;  
+  color: #073332;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 0.7rem;
 }
 
 footer {
-    display: flex;
-    gap: 2rem;
-    font-style: oblique;
-    font-weight: bold;
+  display: flex;
+  gap: 2rem;
+  font-style: oblique;
+  font-weight: bold;
 }
 
-.h2 {
-    text-align: center;
+.textUm {
+  border: 1px solid black;
+  margin-left: 14rem;
+  max-width: fit-content;
+  max-height: fit-content;
+  color: white;
 }
 
+.h2,
 .historia {
-    text-align: justify;
+  text-align: justify;
 }
 
 fieldset {
-    max-width:fit-content;
-    
+  max-width: fit-content;
 }
 
 .span_sexo {
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .label {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
