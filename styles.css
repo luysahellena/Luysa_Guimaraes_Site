@@ -33,7 +33,7 @@ h1 {
 .sidebar {
   background-color: #398988;
   width: 12.5rem;
-  height: 58.8rem;
+  height: 52rem;
   position: absolute;
 }
 
@@ -44,11 +44,23 @@ h1 {
 }
 
 .menu_sidebar {
-  list-style: none;  
+  list-style: none;
   color: #073332;
   font-weight: bold;
   font-size: 1.5rem;
   margin-left: 0.7rem;
+}
+
+.table_sidebar {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.carrossel {
+  border: 1px solid black;  
+  margin: 1.5rem 0 2rem 14rem;
+  color: white;
+  text-align: justify;
 }
 
 footer {
