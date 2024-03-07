@@ -5,7 +5,6 @@ body {
 .header {
   background-color: #398988;
   height: 100px;
-  
 }
 
 h1 {
@@ -13,6 +12,7 @@ h1 {
   color: #073332;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  padding: 1.1rem;  
 }
 
 .nav-bar {
@@ -56,19 +56,18 @@ h1 {
 }
 
 .table_sidebar {
-    font-size: 10px;
-    font-weight: bold;
+  font-size: 10px;
+  font-weight: bold;
 }
 
 .carrossel {
-  border: 1px solid black;  
+  border: 1px solid black;
   margin: 1.5rem 0 2rem 14rem;
   color: white;
   text-align: justify;
   position: relative;
   float: right;
 }
-
 
 .textUm {
   border: 1px solid black;
@@ -85,12 +84,11 @@ h1 {
   text-align: justify;
 }
 
-.form_duvidas{
+.form_duvidas {
   max-width: fit-content;
-  position: relative;  
+  position: relative;
   font-size: 15px;
   margin: 3rem 0 2rem 14rem;
-   
 }
 
 .span_sexo {
@@ -103,17 +101,16 @@ h1 {
 }
 
 footer {
-    display: flex;
-    gap: 2rem;
-    font-style: oblique;
-    font-weight: bold;
-    position: relative;
-    float: right;
-    width: 100%;
-    
+  display: flex;
+  gap: 2rem;
+  font-style: oblique;
+  font-weight: bold;
+  position: relative;
+  float: right;
+  width: 100%;
 }
 
 .rights {
-    border: 1px solid black;
-    width: 100%;
+  border: 1px solid black;
+  width: 100%;
 }
