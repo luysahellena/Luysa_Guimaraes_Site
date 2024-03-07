@@ -1,8 +1,39 @@
 body {
-    background-color: rgb(201, 188, 188);
+    background-color: #375e5e;
 }
 
 .lista {
     display: flex;
     gap: 4rem;
 }
+
+
+.header {
+    background-color: #398988;
+    height: 100px;
+    
+  }
+  
+  h1 {
+    text-align: center;
+    color: #073332;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  
+  .nav-bar {
+    display: flex;
+  }
+  
+  .nav-items {
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem;
+    list-style: none;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #073332;
+    font-weight: bold;
+  }
