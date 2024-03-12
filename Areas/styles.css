@@ -5,32 +5,31 @@ body {
 
 .header {
     background-color: #398988;
-    height: 100px;
-    
-  }
+    height: 100px;    
+}
   
-  h1 {
+h1 {
     text-align: center;
     color: #073332;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
       padding: 1.1rem;  
     
-  }
+}
   
-  .nav-bar {
+.nav-bar {
     display: flex;
-  }
+}
   
-  .nav-items {
+.nav-items {
     display: flex;
     gap: 2rem;
     margin-right: 2rem;
     list-style: none;
-  }
+}
   
-  .link {
+.link {
     text-decoration: none;
     color: #073332;
     font-weight: bold;
-  }
+}
