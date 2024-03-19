@@ -1,17 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* KEYFRAMES AREA */
+
+@keyframes header {
+  from {height: 100px; padding: 0.5rem; font-size: 1.15rem;}
+  to {height: 100px; padding: 0rem; font-size: 1em;}
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* FIM KEYFRAMES AREA */
+
 body {
   background-color: #375e5e;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal; 
+  
 }
+
 
 .header {
   background-color: #398988;
   height: 100px;
+  animation-name: header;
+  animation-duration: 5s;
+  animation-delay: -0.5;
+  
 }
 
 h1 {
   text-align: center;
   color: #073332;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   padding: 1.1rem;  
 }
 
@@ -22,96 +54,186 @@ h1 {
 .nav-items {
   display: flex;
   gap: 2rem;
-  margin-right: 2rem;
+  margin: 1rem 0 0 1rem;
   list-style: none;
+  
 }
 
-.link {
+
+
+a {
+  text-decoration: none;
+  color: #073332;
+  
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) 17rem;
+  font-size: 1.5rem;
+  justify-content;
   text-decoration: none;
   color: #073332;
   font-weight: bold;
+  cursor: pointer; 
+  margin: 0 0 0 5px;
+  
+  
 }
 
-.sidebar {
+.navbar__ul {
+
+}
+
+.navbar__ul--link {
+  transition-property: padding, border, background-color, border-radius;
+  transition-timing-function: ease-in;
+  transition-duration: 0.3s;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.navbar__ul--link:hover {
+  padding: 1px;
+  border: 0px solid #D9D9D9;
+  background-color: #D9D9D9;
+  border-radius: 10%;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  
+}
+
+.aside {
   background-color: #398988;
-  width: 12.5rem;
+  width: 15.5rem;
   height: 45rem;
-  position: absolute;
-  float: left;
+  position: absolute;  
   margin: 1.5rem auto auto auto;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
-.img_sidebar {
-  width: 10rem;
-  height: auto;
-  margin-left: 1rem;
+
+.aside__img {  
+    width: 10rem;
+    height: auto;
+    margin-left: 1rem;
+    transition-property: all;   
+    transition-delay: -5s;
+   
 }
 
-.menu_sidebar {
+.aside__img--imagem {
+
+}
+
+.aside__img--imagem:hover {
+  opacity: 50%;
+  
+}
+
+.aside__nav {
+
+}
+
+.aside__nav__ul {
   list-style: none;
   color: #073332;
   font-weight: bold;
   font-size: 1.5rem;
-  margin-left: 0.7rem;
+  margin-left: 1rem;
+  margin-top: 15rem;
+  
 }
 
+.aside__nav__ul--link {
+  text-decoration: none;
+  color: #073332;
+}
+
+/*
+.div_tabela_sidebar {
+  margin: 3rem 0 0 0;
+  font-weight: 400;
+
+
+}
+*/
+
+
+/*
 .table_sidebar {
-  font-size: 10px;
+  font-size: 7px;
   font-weight: bold;
+  
 }
 
-.carrossel {
-  border: 1px solid black;
-  margin: 1.5rem 0 2rem 14rem;
-  color: white;
-  text-align: justify;
+*/
+
+.main {
+  display: flex;
   position: relative;
-  float: right;
+  padding: 2em;
+  width: 90%;
+  height: max-content;
+  align-items: flex-start;
+  margin-left: 7%;
 }
 
+.main__div {
+  border: 1px solid black;
+}
+  
+
+.main__div-carrossel {  
+  width: 100%;
+  align-content: flex-start
+}
+
+.main__div--noticias {
+  
+}
+
+
+
+
+
+/*
 .textUm {
-  border: 1px solid black;
-  margin-left: 14rem;
-  max-width: fit-content;
-  max-height: fit-content;
+  
+  margin: 0 2rem 0 14rem;
+  text-align: right;
   color: white;
-  position: relative;
-  float: right;
 }
+*/
 
-.h2,
-.historia {
-  text-align: justify;
-}
-
+/*
 .form_duvidas {
   max-width: fit-content;
   position: relative;
   font-size: 15px;
   margin: 3rem 0 2rem 14rem;
+  justify-content: flex-end;
 }
 
 .span_sexo {
   font-weight: bold;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  
 }
 
-.label {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
+*/
 
 footer {
   display: flex;
   gap: 2rem;
   font-style: oblique;
+  font-size: 0.5rem;
   font-weight: bold;
-  position: relative;
-  float: right;
+  position: absolute;
+  padding: 20px 20px;
   width: 100%;
+  
 }
 
-.rights {
-  border: 1px solid black;
-  width: 100%;
-}
 
