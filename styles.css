@@ -30,18 +30,21 @@ body {
   animation-duration: 5s;
   animation-delay: -0.5;
   position: fixed;
-  width: 100%;
+  width: 1600px;
   height: 100px;
   z-index: 1;
+  justify-content: end;
   
-
   
 }
+
 
 h1 {
   text-align: center;
   color: #073332;
-  padding: 1.1rem;  
+  padding: 1rem;  
+  
+  
 }
 
 .nav__span {
@@ -205,8 +208,7 @@ a {
 }
 
 .main {
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
+  
   margin: 20px; 
   position: relative;
   width: 90%;
@@ -217,18 +219,23 @@ a {
 
 .main__div1 {
   border: 1px solid black;
-  
+  width: 1250px;
+  height: 15em;
   display: block;
 }
 
 .main__div2 {
   border: 1px solid black;
   display: block;
+  width: 1250px;
+  height: 15em;
 }
 
 .main__div3 {
   border: 1px solid black;
   display: block;
+  width: 1250px;
+  height: 15em;
   margin-right: 0;
 }
 
