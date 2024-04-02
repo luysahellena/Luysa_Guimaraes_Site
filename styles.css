@@ -191,8 +191,9 @@ a {
 }
 
 .main__div1 {
-  border: 1px solid black;
-  width: 1248px;
+  border: 9px solid #073332;
+  border-radius: 15px;
+  width: 1230px;
   height: 15em;
   display: block;
 }
@@ -205,19 +206,25 @@ a {
 .slide1 {
   float: left;
   width: 100%;
-  animation: alternate slide1 15s infinite;
+  animation: alternate slide1 20s infinite;
 }
 
 .slide2 {
   float: left;
   width: 100%;
-  animation: alternate slide2 15s infinite 6s;
+  animation: alternate slide2 20s infinite 6s;
 }
 
 .slide3 {
   float: left;
   width: 100%;
-  animation: alternate slide3 15s infinite 12s;
+  animation: alternate slide3 20s infinite 12s;
+}
+
+.slide4 {
+  float: left;
+  width: 100%;
+  animation: alternate slide4 20s infinite 16s;
 }
 
 @keyframes slide1 {
@@ -310,17 +317,49 @@ a {
   } /* Slide volta para o início */
 }
 
+@keyframes slide4 {
+  0% {
+    margin-left: 0;
+  } /* Slide começa do início */
+  20% {
+    margin-left: 0;
+  } /* Slide permanece no início por 20% do tempo total */
+  25% {
+    margin-left: 0;
+  } /* Slide se move para a esquerda (início para o fim) */
+  45% {
+    margin-left: -100%;
+  } /* Slide permanece no fim por 20% do tempo total */
+  50% {
+    margin-left: -100%;
+  } /* Slide se move para a esquerda (fim para o início) */
+  70% {
+    margin-left: -100%;
+  } /* Slide permanece no início por 20% do tempo total */
+  75% {
+    margin-left: -200%;
+  } /* Slide se move para a esquerda (início para o fim) */
+  95% {
+    margin-left: -200%;
+  } /* Slide permanece no fim por 20% do tempo total */
+  100% {
+    margin-left: -100%;
+  } /* Slide volta para o início */
+}
+
 .main__div2 {
-  border: 1px solid black;
+  border: 9px solid #073332;
+  border-radius: 15px;
   display: block;
-  width: 1250px;
+  width: 1230px;
   height: 15em;
 }
 
 .main__div3 {
-  border: 1px solid black;
+  border: 9px solid #073332;
+  border-radius: 15px;
   display: block;
-  width: 1250px;
+  width: 1230px;
   height: 15em;
   margin-right: 0;
 }
