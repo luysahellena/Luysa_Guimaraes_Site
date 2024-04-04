@@ -6,6 +6,18 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <link rel="stylesheet" href="stykes.css" />
+
+    <!--LINKS DE FONTES-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--FIM DOS LINKS DE FONTES-->
+
     <title>Contato</title>
   </head>
   <body>
@@ -92,132 +104,153 @@
 
     <nav class="nav_list">
       <ul class="lista">
-        <li><a href="">Parceria</a></li>
-        <li><a href="">Contratação de Serviços</a></li>
-        <li><a href="">Vagas</a></li>
-        <li><a href="">Sugestões e Reclamações</a></li>
+        <li><a href="#parceria">Parceria</a></li>
+        <li><a href="#servicos">Contratação de Serviços</a></li>
+        <li><a href="#vagas">Vagas</a></li>
+        <li><a href="#sac">Sugestões e Reclamações</a></li>
       </ul>
     </nav>
-    <main>
-      <h2>Entre em Contato para Parcerias</h2>
-      <p>
-        Por favor, preencha o formulário abaixo e entraremos em contato para
-        discutir possíveis parcerias.
-      </p>
+    <main class="main">
+      <div>
+        <fieldset>
+          <h2 id="parceria">Entre em Contato para Parcerias</h2>
+          <p>
+            Por favor, preencha o formulário abaixo e entraremos em contato para
+            discutir possíveis parcerias.
+          </p>
 
-      <form action="enviar_parceria.php" method="post">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required /><br />
+          <form action="enviar_parceria.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required /><br />
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required /><br />
 
-        <label for="empresa">Empresa:</label>
-        <input type="text" id="empresa" name="empresa" required /><br />
+            <label for="empresa">Empresa:</label>
+            <input type="text" id="empresa" name="empresa" required /><br />
 
-        <label for="mensagem">Mensagem:</label><br />
-        <textarea
-          id="mensagem"
-          name="mensagem"
-          rows="4"
-          cols="50"
-          required
-        ></textarea
-        ><br />
+            <label for="mensagem">Mensagem:</label><br />
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required>
+            </textarea
+            ><br />
 
-        <button type="submit">Enviar</button>
+            <button type="submit">Enviar</button>
+          </form>
+        </fieldset>
+      </div>
 
-        <h2>Contratação de Serviços Advocatícios</h2>
-        <p>
-          Se você está interessado em contratar nossos serviços advocatícios,
-          por favor, preencha o formulário abaixo com as informações
-          necessárias.
-        </p>
+      <div>
+        <fieldset>
+          <h2 id="servicos">Contratação de Serviços Advocatícios</h2>
+          <p>
+            Se você está interessado em contratar nossos serviços advocatícios,
+            por favor, preencha o formulário abaixo com as informações
+            necessárias.
+          </p>
 
-        <form action="" method="post">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required /><br />
+          <form action="" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required /><br />
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required /><br />
 
-          <label for="telefone">Telefone:</label>
-          <input type="tel" id="telefone" name="telefone" /><br />
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" /><br />
 
-          <label for="empresa">Empresa (opcional):</label>
-          <input type="text" id="empresa" name="empresa" /><br />
+            <label for="empresa">Empresa (opcional):</label>
+            <input type="text" id="empresa" name="empresa" /><br />
 
-          <label for="mensagem">Mensagem:</label><br />
-          <textarea
-            id="mensagem"
-            name="mensagem"
-            rows="4"
-            cols="50"
-            required
-          ></textarea
-          ><br />
+            <label for="mensagem">Mensagem:</label><br />
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="4"
+              cols="50"
+              required
+            ></textarea
+            ><br />
 
-          <button type="submit">Enviar</button>
-        </form>
+            <button type="submit">Enviar</button>
+          </form>
+        </fieldset>
+      </div>
 
-        <h2>Trabalhe Conosco</h2>
-        <p>
-          Se você está interessado em fazer parte da nossa equipe, envie seu
-          currículo através do formulário abaixo.
-        </p>
+      <div>
+        <fieldset>
+          <h2 id="vagas">Trabalhe Conosco</h2>
+          <p>
+            Se você está interessado em fazer parte da nossa equipe, envie seu
+            currículo através do formulário abaixo.
+          </p>
 
-        <form action="enviar_curriculo.php" method="post">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required /><br />
+          <form action="enviar_curriculo.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required /><br />
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required /><br />
 
-          <label for="telefone">Telefone:</label>
-          <input type="tel" id="telefone" name="telefone" /><br />
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" /><br />
 
-          <label for="curriculo">Currículo:</label>
-          <input
-            type="file"
-            id="curriculo"
-            name="curriculo"
-            accept=".pdf, .doc, .docx"
-            required
-          /><br />
+            <label for="curriculo">Currículo:</label>
+            <input
+              type="file"
+              id="curriculo"
+              name="curriculo"
+              accept=".pdf, .doc, .docx"
+              required
+            /><br />
 
-          <label for="mensagem">Mensagem:</label><br />
-          <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea
-          ><br />
+            <label for="mensagem">Mensagem:</label><br />
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="4"
+              cols="50"
+            ></textarea
+            ><br />
 
-          <button type="submit">Enviar</button>
-        </form>
+            <button type="submit">Enviar</button>
+          </form>
+        </fieldset>
+      </div>
 
-        <h2>Sugestõoes ou Reclamações</h2>
-        <p>
-          Por favor, preencha o formulário abaixo e entraremos em contato o mais
-          breve possível.
-        </p>
+      <div>
+        <fieldset>
+          <h2 id="sac">Sugestõoes ou Reclamações</h2>
+          <p>
+            Por favor, preencha o formulário abaixo e entraremos em contato o
+            mais breve possível.
+          </p>
 
-        <form action="enviar_contato.php" method="post">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required /><br />
+          <form action="enviar_contato.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required /><br />
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required /><br />
 
-          <label for="mensagem">Mensagem:</label><br />
-          <textarea
-            id="mensagem"
-            name="mensagem"
-            rows="4"
-            cols="50"
-            required
-          ></textarea
-          ><br />
+            <label for="mensagem">Mensagem:</label><br />
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="4"
+              cols="50"
+              required
+            ></textarea
+            ><br />
 
-          <button type="submit">Enviar</button>
-        </form>
-      </form>
+            <button type="submit">Enviar</button>
+          </form>
+        </fieldset>
+      </div>
     </main>
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Luysa Guimarães - OAB/UF</p>
+      </div>
+    </footer>
   </body>
 </html>
