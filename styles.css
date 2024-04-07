@@ -246,8 +246,9 @@ a {
 }
 
 .conteudo__aside {
-  align-self: flex-end;
-  margin: 34rem 0 0 0;
+  align-self: center;
+  justify-self: center;
+  margin: 32rem 0 0 0;
 }
 
 .aside {
@@ -255,7 +256,7 @@ a {
   /* background-color: #040d26; */
   background: radial-gradient(#040945, #040d26);
   width: 14rem;
-  height: 50rem;
+  height: 48.5rem;
   /* position: relative; */
   margin: 1.5rem;
   overflow: hidden;
