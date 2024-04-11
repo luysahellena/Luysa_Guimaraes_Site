@@ -177,7 +177,7 @@ a {
 
 .navbar__ul--link:hover {
   border-radius: 12%;
-  width: 100%;
+  width: 20%;
   height: auto;
   padding: 10px 0;
   opacity: 40%;

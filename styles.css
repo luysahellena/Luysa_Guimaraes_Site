@@ -36,51 +36,17 @@
 
 /* MEDIA QUERY */
 
-/* @media only screen and (max-width: 950px) {
-  .header {
-    padding: 10px;
-    width: 700px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: start;
-    align-items: start; 
-  }
-
-  .header__h1 {
-    width: 200px;
-    font-size: 10px;
-    padding: 16px;
-    margin: 0;
-  }
-
-  .navbar {
-    display: block; 
-    margin: 10px 0; 
-  }
-
-  .aside {
-    display: none;
-  }
-
-  .main {
-    display: flex;
-    align-items: flex-start;
+/* @media only screen and (max-width: 1279px) {
+  .div__grid {
+    grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "carousel carousel carousel"
+      "noticias noticias avisos"
+      "footer footer footer";
+    gap: 1rem;
     justify-content: flex-start;
-    width: 350px;
-    height: 130px;
-  }
-
-  .main__div1 {
-    width: 80%;
-  }
-
-  .main__div2 {
-    width: 80%;
-  }
-
-  .main__div3 {
-    width: 80%;
+    align-items: center;
   }
 } */
 
@@ -97,7 +63,7 @@ body {
 
 .div__grid {
   display: grid;
-  width: 100vh;
+  width: auto;
   height: 100vh;
   grid-template-areas:
     "header header header header header"
@@ -110,7 +76,7 @@ body {
   grid-template-columns: 250px 400px 400px 200px 200px;
   /* grid-template-rows: max-content; */
   gap: 1rem;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -169,15 +135,17 @@ a {
 }
 
 .navbar {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr) 5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-evenly;
   font-size: 1.2rem;
   text-decoration: none;
   /* color: #073332; */
   color: #040d26;
   font-weight: bold;
   cursor: pointer;
-  margin: 0 0 0 5px;
+  margin: 0 0 0 2px;
   /* padding: 50px 0 0 0; */
   grid-area: nav;
 }
@@ -185,6 +153,8 @@ a {
 .navbar__ul {
   text-decoration: none;
   list-style: none;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .navbar__ul--link {
@@ -197,7 +167,7 @@ a {
 
 .navbar__ul--link:hover {
   border-radius: 12%;
-  width: 100%;
+  width: 20%;
   height: auto;
   padding: 10px 0;
   opacity: 40%;
@@ -489,6 +459,27 @@ a {
   grid-area: noticias;
 }
 
+.noticias--li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.noticias--li li {
+  width: 50%;
+  height: 4.7rem;
+  border: 2px dashed black;
+}
+
+.noticias--li li a {
+  text-decoration: underline brown;
+}
+
+.p__noticia {
+  font-size: 12px;
+}
+
 .div__avisos {
   /* border: 9px solid #073332; */
   border: 9px solid #040d26;
@@ -566,8 +557,8 @@ footer {
   padding: 20px 0;
   text-align: center;
   grid-area: footer;
-  justify-self: stretch;
-  align-self: stretch;
+  /* justify-self: stretch;
+  align-self: stretch; */
 }
 
 .container {
@@ -576,4 +567,98 @@ footer {
   display: flex;
   justify-content: center;
   align-items: end;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 1279px) {
+  /* body {
+    width: 50px;
+    height: auto;
+  } */
+
+  .div__grid {
+    /* grid-template-columns: repeat(3, 1fr); */
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    /* grid-template-rows: auto auto auto auto; */
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "noticias noticias"
+      "avisos avisos"
+      "footer footer";
+    gap: 1rem;
+    /* justify-content: flex-start;
+    align-items: center; */
+    height: 100vw;
+    width: 100vw;
+  }
+
+  .header {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: unset;
+    justify-self: stretch;
+  }
+
+  .header__div1 {
+    width: 100vw;
+    justify-content: end;
+    padding: 0;
+  }
+
+  .header__div2 {
+    animation: none;
+    font-size: 6px;
+    margin: 0;
+    align-self: center;
+  }
+
+  .navbar {
+    width: 100vw;
+    font-size: 8px;
+    margin-left: 0 0 0 1rem;
+    justify-self: stretch;
+  }
+
+  .div__noticias {
+    width: 100vw;
+    height: max-content;
+    font-size: 8px;
+    overflow: scroll;
+    justify-self: stretch;
+    /* margin-bottom: 2rem; */
+  }
+
+  .p__noticia {
+    font-size: 6px;
+  }
+
+  .div__avisos {
+    width: 100vw;
+    height: 30vw;
+    font-size: 8px;
+    overflow: scroll;
+    justify-self: stretch;
+    /*   */
+  }
+
+  .aside {
+    display: none;
+  }
+
+  .section {
+    display: none;
+  }
+
+  .main {
+    display: none;
+  }
+}
+
+footer {
+  width: 100vw;
+  /* height: 100vw; */
+  /* margin-bottom: -5rem; */
 }
