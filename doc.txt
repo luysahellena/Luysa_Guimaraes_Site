@@ -1,0 +1,129 @@
+
+@media only screen and (max-width: 640px) {
+  .div__grid {
+    /* grid-template-columns: repeat(3, 1fr); */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: auto auto auto auto; */
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "noticias noticias"
+      "avisos avisos"
+      "footer footer";
+
+    /* justify-content: flex-start;
+    align-items: center; */
+    width: 100vw;
+  }
+
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header__div2 {
+    justify-content: center;
+    margin: 0;
+    align-self: center;
+  }
+
+  .header__div2 h1 {
+    font-size: 10px;
+  }
+
+  .navbar {
+    font-size: 10px;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .aside {
+    display: none;
+  }
+
+  .section {
+    display: none;
+  }
+
+  .main {
+    display: none;
+  }
+
+  .div__noticias {
+    font-size: 10px;
+  }
+
+  .div__avisos {
+    height: max-content;
+  }
+
+  .footer {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 430px) and (max-width: 1007px) {
+  .div__grid {
+    /* grid-template-columns: repeat(3, 1fr); */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: auto auto auto auto; */
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "noticias noticias"
+      "avisos avisos"
+      "footer footer";
+
+    /* justify-content: flex-start;
+    align-items: center; */
+    width: 100vw;
+  }
+
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+  }
+
+  .header__div2 {
+    justify-content: center;
+    margin: 0;
+    align-self: center;
+  }
+
+  .header__div2 h1 {
+    font-size: 10px;
+  }
+
+  .navbar {
+    font-size: 10px;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .aside {
+    display: none;
+  }
+
+  .section {
+    display: none;
+  }
+
+  .main {
+    display: none;
+  }
+  .div__noticias {
+    font-size: 10px;
+    padding: 0;
+    overflow: scroll;
+  }
+
+  .div__avisos {
+    font-size: 10px;
+  }
+}

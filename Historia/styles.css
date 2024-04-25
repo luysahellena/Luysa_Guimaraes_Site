@@ -5,85 +5,6 @@
   vertical-align: baseline;
 }
 
-/* KEYFRAMES AREA */
-
-@keyframes header {
-  0% {
-    height: 100px;
-    /* text-align: center; */
-    padding: 1rem;
-    font-size: 10px;
-  }
-
-  50% {
-    height: 100px;
-    text-align: center;
-    font-size: 15px;
-    padding: 2rem;
-  }
-
-  100% {
-    height: 100px;
-    /* text-align: center; */
-    padding: 1rem;
-    font-size: 10px;
-  }
-}
-
-/* FIM KEYFRAMES AREA */
-
-/* MEDIA QUERY */
-
-@media only screen and (max-width: 950px) {
-  .header {
-    padding: 10px;
-    width: 700px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: start;
-    align-items: start; */
-  }
-
-  .header__h1 {
-    width: 200px;
-    font-size: 10px;
-    padding: 16px;
-    margin: 0;
-  }
-
-  .navbar {
-    display: block; /* Altera a exibição do menu para empilhado */
-    margin: 10px 0; /* Adiciona espaçamento entre os itens do menu */
-  }
-
-  .aside {
-    display: none;
-  }
-
-  .main {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 350px;
-    height: 130px;
-  }
-
-  .main__div1 {
-    width: 80%;
-  }
-
-  .main__div2 {
-    width: 80%;
-  }
-
-  .main__div3 {
-    width: 80%;
-  }
-}
-
-/* FIM MEDIA QUERY */
-
 body {
   /* background-image: url("./img/bg.png"); */
   background-color: #fafafa;
@@ -93,50 +14,20 @@ body {
   font-style: normal;
 }
 
-.header {
-  /* background-image: url("./img/header.png"); */
-  background-color: #f2f2f2;
-  position: fixed;
-  width: 1600px;
-  height: 100px;
-  z-index: 999;
-  /* justify-content: space-evenly; */
-  align-items: center;
-  display: flex;
-  overflow: hidden;
-}
-
-.header__div1 {
-  width: 20%;
-  padding: 0 0 0 4rem;
-}
-
-.header__div2 {
-  width: 55%;
-  font-size: 15px;
-  animation: header 5s infinite -0.5s;
-  margin-left: 6rem;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  color: #040d26;
-}
-
-/* .header__h1 {
-  width: 1600px;
-  height: 100px;
-  animation-name: header;
-  animation-duration: 5s;
-  animation-delay: -0.5;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  color: #073332;
-  padding: 1rem; }*/
-
-.heade__div1 img {
-  width: 200px;
-  height: 100px;
+.div__grid {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "historia historia historia historia"
+    "footer footer footer footer";
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: max-content; */
+  gap: 1rem;
+  justify-content: stretch;
+  align-items: stretch;
 }
 
 .nav__span {
@@ -150,21 +41,27 @@ a {
 }
 
 .navbar {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr) 5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
   font-size: 1.2rem;
   text-decoration: none;
   /* color: #073332; */
   color: #040d26;
   font-weight: bold;
   cursor: pointer;
-  margin: 0 0 0 5px;
-  padding: 50px 0 0 0;
+  margin: 0 0 0 2px;
+  /* padding: 50px 0 0 0; */
+  grid-area: nav;
 }
 
 .navbar__ul {
   text-decoration: none;
   list-style: none;
+  /* justify-content: center;
+  align-items: center;
+ */
 }
 
 .navbar__ul--link {
@@ -233,18 +130,21 @@ a {
   margin: 0;
   z-index: 999;
 }
-
 .main {
-  display: flex;
-  flex-direction: column;
   gap: 2rem;
   margin: 0 0 2rem 0;
   align-items: center;
+  grid-area: historia;
+  display: flex;
+  flex-direction: column;
 }
 
 .div__h2 {
   color: #073332;
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .div__content {
@@ -261,20 +161,151 @@ a {
   opacity: 85%;
 }
 
-footer {
+.footer {
   background-color: #073332;
   color: #fff;
   padding: 20px 0;
   text-align: center;
   display: flex;
-
-  align-items: flex-end;
+  justify-content: center;
+  grid-area: footer;
+  display: flex;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: end;
+@media only screen and (max-width: 640px) {
+  .div__grid {
+    /* grid-template-columns: repeat(3, 1fr); */
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    /* grid-template-rows: auto auto auto auto; */
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "historia historia"
+      "footer footer";
+    gap: 1rem;
+    /* justify-content: flex-start;
+    align-items: center; */
+    height: 80%;
+    width: 80%;
+  }
+
+  .header {
+    width: 80%;
+    display: flex;
+    justify-content: stretch;
+    justify-self: stretch;
+  }
+
+  .header__div1 {
+    width: 30vh;
+    justify-content: center;
+    padding: 0;
+    align-self: center;
+  }
+
+  .header__div2 {
+    width: 70vw;
+    justify-content: center;
+    margin: 0;
+    align-self: center;
+  }
+
+  .header__div2 h1 {
+    font-size: 15px;
+  }
+
+  .navbar {
+    font-size: 10px;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .main {
+    width: 80%;
+    height: 80%;
+    justify-self: center;
+    gap: none;
+  }
+
+  .div__h2 {
+    font-size: 12px;
+  }
+
+  .div__content {
+    text-align: justify;
+    background-color: #b8afa6;
+    border-radius: 20px;
+    padding: 2px;
+    width: fit-content;
+
+    font-weight: 400;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 430px) and (max-width: 1007px) {
+  .div__grid {
+    /* grid-template-columns: repeat(3, 1fr); */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: auto auto auto auto; */
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "historia historia"
+      "footer footer";
+    gap: 1rem;
+    /* justify-content: flex-start;
+    align-items: center; */
+    width: 100vw;
+  }
+
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+  }
+
+  .header__div2 {
+    justify-content: center;
+    margin: 0;
+    align-self: center;
+  }
+
+  .header__div2 h1 {
+    font-size: 10px;
+  }
+
+  .navbar {
+    font-size: 10px;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .main {
+    width: 80%;
+    height: 80%;
+    justify-self: center;
+  }
+
+  .div__h2 {
+    font-size: 12px;
+  }
+
+  .div__content {
+    text-align: justify;
+    background-color: #b8afa6;
+    border-radius: 20px;
+    padding: 2px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 10px;
+  }
+
+  .footer {
+    display: block;
+  }
 }
