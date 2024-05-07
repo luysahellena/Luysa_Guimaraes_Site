@@ -127,3 +127,143 @@
     font-size: 10px;
   }
 }
+
+HISTÓRIA
+
+@media only screen and (min-width: 430px) and (max-width: 1007px) {
+  .div__grid {
+    /* grid-template-columns: repeat(3, 1fr); */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: auto auto auto auto; */
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "historia historia"
+      "footer footer";
+    gap: 1rem;
+    /* justify-content: flex-start;
+    align-items: center; */
+    width: 100vw;
+  }
+
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+  }
+
+  .header__div2 {
+    justify-content: center;
+    margin: 0;
+    align-self: center;
+  }
+
+  .header__div2 h1 {
+    font-size: 10px;
+  }
+
+  .navbar {
+    font-size: 10px;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .main {
+    width: 80%;
+    height: 80%;
+    justify-self: center;
+  }
+
+  .div__h2 {
+    font-size: 12px;
+  }
+
+  .div__content {
+    text-align: justify;
+    background-color: #b8afa6;
+    border-radius: 20px;
+    padding: 2px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 10px;
+  }
+
+  .footer {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .div__grid {
+    /* grid-template-columns: repeat(3, 1fr); */
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    /* grid-template-rows: auto auto auto auto; */
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "historia historia"
+      "footer footer";
+    gap: 1rem;
+    /* justify-content: flex-start;
+    align-items: center; */
+    height: 80%;
+    width: 80%;
+  }
+
+  .header {
+    width: 80%;
+    display: flex;
+    justify-content: stretch;
+    justify-self: stretch;
+  }
+
+  .header__div1 {
+    width: 30vh;
+    justify-content: center;
+    padding: 0;
+    align-self: center;
+  }
+
+  .header__div2 {
+    width: 70vw;
+    justify-content: center;
+    margin: 0;
+    align-self: center;
+  }
+
+  .header__div2 h1 {
+    font-size: 15px;
+  }
+
+  .navbar {
+    font-size: 10px;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .main {
+    width: 80%;
+    height: 80%;
+    justify-self: center;
+    gap: none;
+  }
+
+  .div__h2 {
+    font-size: 12px;
+  }
+
+  .div__content {
+    text-align: justify;
+    background-color: #b8afa6;
+    border-radius: 20px;
+    padding: 2px;
+    width: fit-content;
+
+    font-weight: 400;
+    font-size: 10px;
+  }
+}

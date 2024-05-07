@@ -5,6 +5,11 @@
   vertical-align: baseline;
 }
 
+.minhaclasse.header {
+  display: flex;
+  flex-direction: row;
+}
+
 .header {
   /* background-image: url("./img/header.png"); */
   background-color: #f2f2f2;

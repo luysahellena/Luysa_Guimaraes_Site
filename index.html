@@ -1,293 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="keywords"
-      content="advocacia, escritório, advogados, juridico, civil, penal, constituição, leis"
-    />
-    <meta
-      name="description"
-      content="Escritório de Advocacia renomado, com atuação em diversas áreas jurídicas como Civil, Penal, Trabalhista e Tributário"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="header.css" />
-
-    <!-- FIM CSS -->
-
+    <title>Escritório Jurídico</title>
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link rel="stylesheet" href="novoStyles.css" />
     <!-- BOOTSTRAP -->
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- FIM DO BOOTSTRAP -->
-
-    <!--LINKS DE FONTES-->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-    <!--FIM DOS LINKS DE FONTES-->
-
-    <title>Luysa Guimarães Sociedade de Advogados</title>
+    <!-- FIM BOOTSTRAP -->
   </head>
-  <body>
-    <!--HEADER IGUAL PARA TODAS AS PAGES-->
-    <div
-      class="container-sm container-md container-lg container-xl container-xxl"
-    >
-      <header class="minhaclasse header">
-        <div class="header__div1">
-          <img src="./img/LUYSA GUIMARÃES.png" alt="" srcset="" />
-        </div>
-        <div class="header__div2">
-          <h1>LUYSA GUIMARÃES SOCIEDADE DE ADVOGADOS</h1>
-        </div>
+  <body class="body">
+    <div class="grid">
+      <header class="header">
+        <img src="./img/img-nav.png" alt="" class="" />
       </header>
-
-      <!--FIM DO HEADER IGUAL PARA TODAS AS PAGES-->
-      <nav class="minhaclasse navbar">
-        <ul class="minhaclasse navbar navbar__ul">
-          <li class="navbar__ul">
-            <a
-              href="index.html"
-              class="navbar__ul navbar__ul--link"
-              target="_self"
-            >
-              Início
-            </a>
-          </li>
-          <li class="navbar__ul">
-            <a
-              href="./Historia/historia.html"
-              class="navbar__ul navbar__ul--link"
-              target="_self"
-              ><!--<span class="nav__span">Quem</span
-              ><span class="nav__span">somos</span
-              ><span class="nav__span">nós?</span>!-->Quem somos nós?</a
-            >
-          </li>
-          <li class="navbar__ul">
-            <a href="" class="navbar__ul navbar__ul--link" target="_self"
-              ><!--<span class="nav__span">Areas</span
-              ><span class="nav__span">de</span
-              ><span class="nav__span">atuação</span>!-->Areas de Atuação</a
-            >
-            <div class="submenu">
-              <ul class="item__submenu">
-                <li>
-                  <a href="Areas/Civel/civel.html" target="_self">Cível</a>
-                </li>
-                <li>
-                  <a href="Areas/Administrativo/index.html" target="_self"
-                    >Administrativo</a
-                  >
-                </li>
-                <li>
-                  <a href="Areas/Penal/index.html" target="_self">Penal</a>
-                </li>
-                <li>
-                  <a href="Areas/Tributario/index.html" target="_self"
-                    >Tributário</a
-                  >
-                </li>
-                <li>
-                  <a href="Areas/Trabalhista/index.html" target="_self"
-                    >Trabalhista</a
-                  >
-                </li>
-              </ul>
+      <nav class="nav">
+        <ul class="ul">
+          <li><a href="./Historia/historia.html">História</a></li>
+          <li class="li">
+            <div class="dropdown">
+              <button class="mainmenubtn">Areas</button>
+              <div class="dropdown-child">
+                <a href="./Areas/Administrativo/index.html">Administrativo</a>
+                <a href="./Areas/Civel/civel.html">Civel</a>
+                <a href="./Areas/Penal/index.html">Penal</a>
+                <a href="./Areas/Trabalhista/index.html">Trabalhista</a>
+                <a href="./Areas/Tributario/index.html">Tributário</a>
+              </div>
             </div>
           </li>
-          <li class="navbar__ul">
-            <a
-              href="./Colaboradores/colaboradores.html"
-              class="navbar__ul navbar__ul--link"
-              target="_self"
-              >Colaboradores</a
-            >
-          </li>
-          <li class="navbar__ul">
-            <a
-              href="./Contato/contato.html"
-              class="navbar__ul navbar__ul--link"
-              target="_self"
-            >
-              Contato
-            </a>
-          </li>
+
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
-
-      <aside class="minhaclasse aside">
-        <section class="section__aside">
-          <div class="aside__img">
-            <div>
-              <img src="" alt="" class="aside aside__img aside__img--imagem" />
-            </div>
-            <br /><br />
-          </div>
-        </section>
-      </aside>
-
-      <section class="minhaclasse section">
-        <div>
-          <img src="./img/img-nav.png" alt="" />
-        </div>
-      </section>
-
-      <main class="minhaclasse main">
-        <div class="slide1">
-          <img src="" alt="Imagem 1" />
-        </div>
-        <div class="slide2">
-          <img src="" alt="Imagem 2" />
-        </div>
-        <div class="slide3">
-          <img src="" alt="Imagem 3" />
-        </div>
-        <div class="slide4">
-          <img src="" alt="Imagem 1" />
-        </div>
-      </main>
-
-      <section class="minhaclasse div__noticias">
-        <div>
-          <ul class="noticias--li">
-            <li>
-              <a
-                href="https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2024/10042024-Sessao-solene-celebra-os-35-anos-de-atuacao-do-STJ-na-concretizacao-de-direitos-.aspx"
-                target="_blank"
-              >
-                <strong
-                  >Sessão solene celebra os 35 anos de atuação do STJ na
-                  concretização de direitos</strong
-                >
-              </a>
-              <p class="p__noticia">
-                Um tribunal ainda jovem, mas que se consolidou rapidamente ao
-                decidir questões fundamentais para o país, contribuindo para a
-                concretização de direitos e para a efetivação da justiça.
-              </p>
-            </li>
-            <li>
-              <a
-                href="https://www.conjur.com.br/2024-abr-10/mulheres-sao-40-na-primeira-instancia-mas-so-12-entre-desembargadores-no-tj-sp/"
-                target="_blank"
-              >
-                <strong>
-                  Mulheres são 40% na 1ª instância, mas só 12% entre
-                  desembargadores no TJ-SP
-                </strong>
-              </a>
-
-              <p class="p__noticia">
-                Atualmente, entre os 2.188 magistrados de primeiro grau em todo
-                o estado, 894 são mulheres — elas representam, portanto, 40,8%
-                do total.
-              </p>
-            </li>
-            <li>
-              <a
-                href="https://www.tjmg.jus.br/portal-tjmg/noticias/tjmg-e-governo-de-minas-assinam-portaria-para-tramitacao-eletronica-de-inqueritos-policiais.htm"
-                target="_blank"
-              >
-                <strong>
-                  TJMG e Governo de Minas assinam portaria para tramitação
-                  eletrônica de inquéritos policiais
-                </strong>
-              </a>
-              <p class="p__noticia">
-                Com a tramitação eletrônica, será possível oferecer mais
-                agilidade na tramitação de inquéritos e, assim, imprimir maior
-                celeridade às investigações criminais, ao cumprimento das
-                diligências [...]
-              </p>
-            </li>
-            <li>
-              <a
-                href="https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=531989&ori=1"
-                target="_blank"
-              >
-                <strong>
-                  Ministro Fachin recebe relatório final do CNJ em ação sobre
-                  letalidade policial no RJ
-                </strong>
-              </a>
-              <p class="p__noticia">
-                o documento concluiu que não há outro caminho para fiscalizar a
-                efetividade da atuação policial e a preservação dos direitos
-                humanos senão com a transparência dos dados das investigações
-              </p>
-            </li>
-            <li>
-              <a
-                href="https://www.cnj.jus.br/tres-boas-praticas-disseminam-cultura-da-transparencia-em-tribunais-brasileiros/"
-                target="_blank"
-              >
-                <strong>
-                  Três boas práticas disseminam cultura da transparência em
-                  tribunais brasileiros
-                </strong>
-              </a>
-
-              <p class="p__noticia">
-                Três tribunais apresentaram iniciativas de sucesso com foco no
-                Eixo Transparência do Portal CNJ de Boas Práticas do Poder
-                Judiciário.
-              </p>
-            </li>
-            <li>
-              <a
-                href="https://www.oab.org.br/noticia/62111/esa-prorroga-inscricoes-para-bolsas-de-pos-graduacao-em-pratica-em-advocacia-trabalhista-e-previdenciaria"
-                target="_blank"
-              >
-                <strong>
-                  ESA prorroga inscrições para bolsas de pós-graduação
-                </strong>
-              </a>
-              <p class="p__noticia">
-                As inscrições foram prorrogadas até 16 de abril e podem ser
-                realizadas neste link. Ao todo, dez mil benefícios serão
-                concedidos em todo o Brasil.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="minhaclasse div__avisos">
-        <div>
-          <h2>AQUI TEREMOS AVISOS</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
-            doloremque, esse beatae accusamus minus dolorem accusantium aperiam
-            quisquam minima deserunt reprehenderit, illo voluptatum placeat
-            dignissimos consectetur quos nemo neque possimus!
+      <!-- <section id="banner">
+        <img src="./img/img-nav.png" alt="" class="img-thumbnail" />
+      </section> -->
+      <main id="main">
+        <div class="perfil">
+          <img src="./img/perfil.jpeg" alt="" />
+          <p class="text-jur">
+            Consultas a representação em tribunal, oferecemos suporte jurídico
+            personalizado e eficaz. Conte conosco para resolver seus desafios
+            legais. Justiça acessível e confiável ao seu alcance. Entre em
+            contato hoje mesmo.
           </p>
         </div>
-      </section>
-
-      <br /><br /><br />
-      <footer class="minhaclasse footer">
-        <div>
-          <p>&copy; 2024 Luysa Guimarães - OAB/UF</p>
+        <div class="config-set">
+          <h2>Nossos Serviços</h2>
+          <ul class="servicos__ul">
+            <li>Consultoria Jurídica</li>
+            <li>Assessoria em Contratos</li>
+            <li>Contencioso Cível e Trabalhista</li>
+            <li>Direito Tributário</li>
+            <li>Direito Empresarial</li>
+          </ul>
         </div>
+      </main>
+      <section id="equipe">
+        <h2>Nossa Equipe</h2>
+        <div class="perfil color-txt">
+          <img src="./img/adv1.avif" alt="Advogado 1" />
+          <h3>Cecília Guimarães</h3>
+          <p>CEO e Sócia da G&M Advogados</p>
+        </div>
+        <div class="perfil color-txt">
+          <img src="./img/adv2.avif" alt="Advogado 2" />
+          <h3>Francielle Marques</h3>
+          <p>VP e Sócia da G&M Advogados</p>
+        </div>
+        <div class="perfil color-txt">
+          <img src="./img/adv3.jpeg" alt="Advogado 3" />
+          <h3>Vanessa Caffagi</h3>
+          <p>Especialista em Direito Empresarial</p>
+        </div>
+        <div class="perfil color-txt">
+          <img src="./img/adv4.jfif" alt="Advogado 1" />
+          <h3>Bianca Rezende</h3>
+          <p>Especialista em Direito Trabalhista</p>
+        </div>
+        <div class="perfil color-txt">
+          <img src="./img/adv5.jfif" alt="Advogado 1" />
+          <h3>Vitória Maia</h3>
+          <p>Especialista em Direito Penal</p>
+        </div>
+        <div class="perfil color-txt">
+          <img src="./img/adv6.jfif" alt="Advogado 1" />
+          <h3>Luana Souza</h3>
+          <p>Especialista em Direito do Consumidor</p>
+        </div>
+        <div class="perfil color-txt">
+          <img src="./img/adv7.jfif" alt="Advogado 1" />
+          <h3>Marina Couto</h3>
+          <p>Especialista em Direito Previdenciário</p>
+        </div>
+        <div class="perfil color-txt">
+          <img src="./img/adv8.jfif" alt="Advogado 1" />
+          <h3>Debora Magalhães</h3>
+          <p>Especialista em Direito Tributário</p>
+        </div>
+        <div class="perfil color-txt">
+          <img src="./img/adv8.jfif" alt="Advogado 1" />
+          <h3>Debora Magalhães</h3>
+          <p>Especialista em Direito Tributário</p>
+        </div>
+        <div class="perfil color-txt">
+          <img src="./img/adv8.jfif" alt="Advogado 1" />
+          <h3>Debora Magalhães</h3>
+          <p>Especialista em Direito Tributário</p>
+        </div>
+        <div class="perfil color-txt">
+          <img src="./img/adv8.jfif" alt="Advogado 1" />
+          <h3>Debora Magalhães</h3>
+          <p>Especialista em Direito Tributário</p>
+        </div>
+      </section>
+      <section id="contato">
+        <div>
+          <fieldset>
+            <h2 id="parceria">Entre em Contato para Parcerias</h2>
+            <p>
+              Por favor, preencha o formulário abaixo e entraremos em contato
+              para discutir possíveis parcerias.
+            </p>
+
+            <form action="enviar_parceria.php" method="post">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required /><br />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required /><br />
+
+              <label for="empresa">Empresa:</label>
+              <input type="text" id="empresa" name="empresa" required /><br />
+
+              <label for="mensagem">Mensagem:</label><br />
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="4"
+                cols="50"
+                required
+              >
+              </textarea
+              ><br />
+
+              <button type="submit">Enviar</button>
+            </form>
+          </fieldset>
+        </div>
+      </section>
+      <footer class="footer">
+        <p>
+          &copy; 2024 Guimarães & Marques Sociedade de Advogados - OAB/UF. Todos
+          os direitos reservados.
+        </p>
       </footer>
     </div>
   </body>

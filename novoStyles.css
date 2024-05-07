@@ -1,0 +1,212 @@
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  /* background-color: #333; */
+  color: #fff;
+  text-align: center;
+}
+
+.header img {
+  width: 100vw;
+  z-index: -999;
+}
+
+.nav {
+  position: relative;
+}
+
+.ul {
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  color: #333;
+  background-color: #f8c13c;
+  width: 100vw;
+}
+
+.ul li {
+  margin-right: 20px;
+  font-size: 15px;
+  gap: 2rem;
+  height: fit-content;
+}
+
+.ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.mainmenubtn {
+  background-color: #f8c13c;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  max-width: 50px;
+  font-weight: bold;
+  width: 20px;
+  display: inline-block;
+}
+.mainmenubtn:hover {
+  opacity: 80%;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-child {
+  display: none;
+  width: 20px;
+  position: absolute;
+  background-color: #f8c13c;
+}
+.dropdown-child a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-child {
+  display: block;
+  width: max-content;
+}
+
+.dropdown-child a:hover {
+  opacity: 80%;
+}
+
+section {
+  /* padding: 50px 20px; */
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "nav nav nav"
+    "header header header"
+    "main main main"
+    "equipe equipe equipe"
+    "contato contato contato"
+    "footer footer footer";
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container-fluid1 {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  grid-area: header;
+}
+
+#banner {
+  background-color: #f2f2f2;
+  grid-area: banner;
+}
+
+#main {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  background-color: #333333;
+  grid-area: main;
+  height: 600px;
+  padding: 3rem;
+}
+
+.text-jur {
+  text-align: justify;
+  width: 200px;
+  color: #e6e6e6;
+}
+
+.config-set {
+  text-align: center;
+}
+
+.config-set h2 {
+  color: #e6e6e6;
+}
+
+.servicos__ul {
+  list-style-type: none;
+  padding: 0;
+  top: 0;
+  color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  gap: 2rem;
+}
+
+.servicos__ul li {
+  background-color: #e6e6e6;
+  color: #333;
+  padding: 10px;
+  border-radius: 40px 10px;
+}
+
+.servicos__ul li:hover {
+  opacity: 80%;
+  cursor: grab;
+}
+
+#equipe {
+  background-color: #f2f2f2;
+  grid-area: equipe;
+  height: 60em;
+}
+
+#equipe h2 {
+  margin: 2rem;
+}
+
+.color-txt {
+  color: #333333;
+}
+
+#contato {
+  background-color: #e6e6e6;
+  grid-area: contato;
+  height: 400px;
+}
+
+.contato__flex {
+  display: flex;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.perfil {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.perfil img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}

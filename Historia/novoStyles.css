@@ -1,0 +1,121 @@
+body {
+  background-color: #333;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "nav nav nav"
+    "header header header"
+    "main main main"
+    "footer footer footer";
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.header {
+  /* background-color: #333; */
+
+  text-align: center;
+  grid-area: header;
+}
+
+.header img {
+  width: 100vw;
+
+  z-index: -999;
+}
+
+.nav {
+  position: relative;
+  grid-area: nav;
+}
+
+.ul {
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.ul li {
+  display: flex;
+  margin-right: 20px;
+  font-size: 15px;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: #333;
+  background-color: #f8c13c;
+  text-decoration: none;
+  border: 2px solid #f8c13c;
+
+  font-weight: bold;
+}
+
+.main {
+  grid-area: main;
+}
+
+.flexConfig {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex1,
+.flex3,
+.flex5 {
+  margin-left: 10rem;
+}
+
+.flexConfig .flex2 {
+  justify-self: center;
+  align-self: flex-end;
+  margin-right: 10rem;
+}
+
+.flexConfig .flex4 {
+  justify-self: center;
+  align-self: flex-end;
+  margin-right: 10rem;
+}
+
+.flexConfig .flex6 {
+  justify-self: center;
+  align-self: flex-end;
+  margin-right: 10rem;
+}
+
+.div__h2 {
+  color: #e6e6e6;
+  justify-self: center;
+  align-self: center;
+  margin: 2rem;
+}
+
+.div__content {
+  width: 30%;
+  text-align: justify;
+  background-color: #b8afa6;
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.flex2,
+.flex4,
+.flex6 {
+  position: relative;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
