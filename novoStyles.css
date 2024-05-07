@@ -27,8 +27,8 @@
   display: flex;
   justify-content: space-evenly;
   align-items: stretch;
-  color: #333;
-  background-color: #f8c13c;
+  background-color: #333333;
+  color: #e6e6e6;
   width: 100vw;
 }
 
@@ -41,13 +41,13 @@
 
 .ul li a {
   text-decoration: none;
-  color: #333;
+  color: #e6e6e6;
   font-weight: bold;
 }
 
 .mainmenubtn {
-  background-color: #f8c13c;
-  color: #333;
+  background-color: #333333;
+  color: #e6e6e6;
   border: none;
   cursor: pointer;
   max-width: 50px;
@@ -66,10 +66,10 @@
   display: none;
   width: 20px;
   position: absolute;
-  background-color: #f8c13c;
+  background-color: #333;
 }
 .dropdown-child a {
-  color: #333;
+  color: #e6e6e6;
   text-decoration: none;
   display: block;
 }
@@ -93,6 +93,7 @@ section {
     "nav nav nav"
     "header header header"
     "main main main"
+    "ideia ideia ideia"
     "equipe equipe equipe"
     "contato contato contato"
     "footer footer footer";
@@ -164,6 +165,55 @@ section {
   cursor: grab;
 }
 
+#ideia {
+  grid-area: ideia;
+  background-image: url("./img/bgdiv.png");
+  height: 600px;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.ideia-div1 {
+  width: 20vw;
+  background-color: #e6e6e6;
+  border-radius: 20px 50px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.ideia-div1 p {
+  text-align: justify;
+}
+
+.ideia-div2 {
+  width: 20vw;
+  background-color: #e6e6e6;
+  border-radius: 20px 50px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.ideia-div2 p {
+  text-align: justify;
+}
+
+/* #ideia img {
+  width: 100vw;
+  opacity: 80%;
+} */
+
 #equipe {
   background-color: #f2f2f2;
   grid-area: equipe;
@@ -181,11 +231,24 @@ section {
 #contato {
   background-color: #e6e6e6;
   grid-area: contato;
-  height: 400px;
+  height: 500px;
+  background-image: url("./img/form.png");
+  width: 100vw;
+  position: relative;
 }
 
-.contato__flex {
-  display: flex;
+.form {
+  background-color: #e6e6e6;
+  position: absolute;
+  border-radius: 45px;
+  padding: 20px;
+  right: 0;
+  opacity: 85%;
+  margin: 2rem;
+}
+
+.form:hover {
+  opacity: 90%;
 }
 
 .footer {
