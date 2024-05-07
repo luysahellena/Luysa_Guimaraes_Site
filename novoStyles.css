@@ -8,28 +8,34 @@
   /* background-color: #333; */
   color: #fff;
   text-align: center;
+  width: 100vw;
+  grid-area: header;
 }
 
 .header img {
-  width: 100vw;
   z-index: -999;
+  width: 100vw;
 }
 
 .nav {
   position: relative;
+  height: 50px;
+  background-color: #333333;
+  width: 100vw;
 }
 
 .ul {
   list-style-type: none;
   padding: 0;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  background-color: #333;
+  height: 50px;
   display: flex;
   justify-content: space-evenly;
-  align-items: stretch;
-  background-color: #333333;
+  align-items: center;
   color: #e6e6e6;
   width: 100vw;
+  opacity: 85%;
 }
 
 .ul li {
@@ -107,10 +113,6 @@ section {
   margin: 0;
 }
 
-.header {
-  grid-area: header;
-}
-
 #banner {
   background-color: #f2f2f2;
   grid-area: banner;
@@ -124,6 +126,7 @@ section {
   grid-area: main;
   height: 600px;
   padding: 3rem;
+  width: 100vw;
 }
 
 .text-jur {
@@ -173,6 +176,7 @@ section {
   gap: 2rem;
   justify-content: center;
   align-items: center;
+  width: 100vw;
 }
 
 .ideia-div1 {
@@ -209,6 +213,14 @@ section {
   text-align: justify;
 }
 
+.ideia-div1:hover {
+  opacity: 80%;
+}
+
+.ideia-div2:hover {
+  opacity: 80%;
+}
+
 /* #ideia img {
   width: 100vw;
   opacity: 80%;
@@ -218,6 +230,7 @@ section {
   background-color: #f2f2f2;
   grid-area: equipe;
   height: 60em;
+  width: 100vw;
 }
 
 #equipe h2 {
@@ -253,6 +266,7 @@ section {
 
 .footer {
   grid-area: footer;
+  width: 100vw;
 }
 
 .perfil {
