@@ -9,6 +9,7 @@
   color: #fff;
   text-align: center;
   grid-area: header;
+  width: 100vw;
 }
 
 .header img {
@@ -18,41 +19,48 @@
 
 .nav {
   position: relative;
-  width: 100px;
-  grid-area: nav;
+  height: 50px;
+  background-color: #333333;
+  width: 100vw;
 }
 
 .ul {
   list-style-type: none;
   padding: 0;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  background-color: #333;
+  height: 50px;
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #e6e6e6;
+  width: 100vw;
+  opacity: 85%;
 }
 
 .ul li {
   margin-right: 20px;
   font-size: 15px;
   gap: 2rem;
-
   height: fit-content;
 }
 
 .ul li a {
-  color: #333;
-  background-color: #f8c13c;
   text-decoration: none;
-  border: 2px solid #f8c13c;
+  color: #e6e6e6;
   font-weight: bold;
 }
 
+
 .mainmenubtn {
-  background-color: #f8c13c;
-  color: #333;
+  background-color: #333333;
+  color: #e6e6e6;
   border: none;
   cursor: pointer;
+  max-width: 50px;
+  font-weight: bold;
+  width: 20px;
+  display: inline-block;
 
   font-weight: bold;
 }
@@ -65,23 +73,24 @@
 }
 .dropdown-child {
   display: none;
-  background-color: skyblue;
-  width: fit-content;
+  width: 20px;
+  position: absolute;
+  background-color: #333;
 }
 .dropdown-child a {
-  color: blue;
-
+  color: #e6e6e6;
   text-decoration: none;
   display: block;
 }
 .dropdown:hover .dropdown-child {
   display: block;
+  width: max-content;
 }
 
 .dropdown-child a:hover {
   opacity: 80%;
-  background-color: #f1c459;
 }
+
 
 section {
   /* padding: 50px 20px; */
@@ -102,6 +111,24 @@ section {
   grid-area: main;
 }
 
+#main h2 {
+  color:#f8c13c;
+}
+
+#main {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  background-color: #333333;
+  grid-area: main;
+  height: 700px;
+  padding: 3rem;
+  width: 100vw;
+  color:#fff;
+}
+
+  
+
 .perfil {
   display: inline-block;
   margin: 0 20px;
@@ -112,8 +139,14 @@ section {
   width: 150px;
   height: 150px;
   object-fit: cover;
+
 }
 
-.footer {
+footer {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  text-align: center;
   grid-area: footer;
+  width: 100vw;
 }
