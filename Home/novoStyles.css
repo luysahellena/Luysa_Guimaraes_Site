@@ -362,6 +362,14 @@ section {
     position: sticky;
   }
 
+  .form {
+    max-width: 480px;
+  }
+
+  .form textarea {
+    max-width: 480px;
+  }
+
   .footer {
     grid-area: footer;
   }
@@ -396,7 +404,7 @@ section {
     display: inline-block;
     justify-content: center;
     padding: 0;
-    max-width: 480px;
+    max-width: 640px;
   }
 
   .perfil {
@@ -444,7 +452,7 @@ section {
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 641px) and (max-width: 768px) {
   .grid {
     grid-template-areas:
       "nav nav nav"
@@ -454,6 +462,7 @@ section {
       "contato contato contato"
       "footer footer footer";
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: max-content;
   }
 
   .nav {
@@ -461,12 +470,17 @@ section {
   }
   .ul {
     width: 99vw;
+  }
+
+  .ideia {
+    display: none;
   }
 
   #main {
     grid-area: main;
     display: inline-block;
     padding: 0;
+    min-width: 641px;
     max-width: 768px;
   }
 
@@ -477,6 +491,7 @@ section {
   }
 
   #equipe {
+    min-width: 641px;
     max-width: 768px;
     height: max-content;
   }
@@ -495,6 +510,7 @@ section {
 
   #contato {
     grid-area: contato;
+    min-width: 641px;
     max-width: 768px;
     height: max-content;
   }
@@ -510,7 +526,7 @@ section {
   }
 }
 
-@media (min-width: 641px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .grid {
     grid-template-areas:
       "nav nav nav"
@@ -520,6 +536,7 @@ section {
       "contato contato contato"
       "footer footer footer";
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: max-content;
   }
 
   .nav {
@@ -529,10 +546,15 @@ section {
     width: 99vw;
   }
 
+  .ideia {
+    display: none;
+  }
+
   #main {
     grid-area: main;
     display: inline-block;
     padding: 2rem;
+    min-width: 768px;
     max-width: 1024px;
     height: max-content;
   }
@@ -544,6 +566,7 @@ section {
   }
 
   #equipe {
+    min-width: 768px;
     max-width: 1024px;
     height: max-content;
   }
@@ -562,6 +585,7 @@ section {
 
   #contato {
     grid-area: contato;
+    min-width: 768px;
     max-width: 1024px;
     height: max-content;
   }
@@ -577,69 +601,16 @@ section {
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1200px) {
+@media (min-width: 1025px) {
   .grid {
     grid-template-areas:
       "nav nav nav"
       "header header header"
       "main main main"
+      "ideia ideia ideia"
       "equipe equipe equipe"
       "contato contato contato"
       "footer footer footer";
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .nav {
-    width: 99vw;
-  }
-  .ul {
-    width: 99vw;
-  }
-
-  #main {
-    grid-area: main;
-    display: inline-block;
-    padding: 2rem;
-    min-width: 1025px;
-    height: max-content;
-  }
-
-  .perfil {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #equipe {
-    min-width: 1025px;
-    height: max-content;
-  }
-
-  #equipe .perfil {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  #equipe .perfil img {
-    width: 100px;
-    height: 100px;
-  }
-
-  #contato {
-    grid-area: contato;
-    min-width: 1025px;
-    height: max-content;
-  }
-
-  #contato .form {
-    margin: 1rem;
-    top: 5rem;
-    position: sticky;
-  }
-
-  .footer {
-    grid-area: footer;
   }
 }
